@@ -185,7 +185,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-color: #4bb3e3;
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -323,7 +323,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-color: #4bb3e3;
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -720,4 +720,31 @@ textarea {
     to {
         text-shadow: 0 0 20px #00FFAB, 0 0 30px #00FFAB;
     }
+}
+
+
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  position: relative; /* Ensure the container is positioned relative */
+}
+
+.projects__row-img,
+.overlay-image {
+  grid-column: 1 / -1; /* Place both images in the same grid cell */
+  grid-row: 1 / -1;
+  width: 100%; /* Ensure both images take up the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay-image {
+  z-index: 2; /* Ensure the overlay image is on top */
+  position: absolute; /* Position the overlay image absolutely within the grid cell */
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -60%); /* Center the overlay image */
+  width: 77%; /* Adjust the size of the overlay image */
+  height: auto; /* Maintain aspect ratio */
 }
