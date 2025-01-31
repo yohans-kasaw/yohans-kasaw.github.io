@@ -988,7 +988,14 @@ pre {
 
 .hero-left {
   flex: 0.8; /* Reduced flex value to give more space to the image */
-  padding-right: 4rem;
+  background-color: blue;
+  justify-content: right;
+  align-items: right;
+}
+
+.hero-left-content{
+  background-color: red;
+  text-align: right;
 }
 
 .heading-primary {
@@ -1078,5 +1085,12 @@ pre {
   .hero-right-content {
     max-width: 300px;
   }
+}
+
+.stat-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
